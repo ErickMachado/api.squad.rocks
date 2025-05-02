@@ -2,6 +2,10 @@
   "author": "Erick Machado <erick.gsmachado@gmail.com>",
   "bugs": "https://github.com/ErickMachado/api.squad.rocks/issues",
   "description": "Gerencie projetos de software de forma simples e transparente 🤘",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0"
+  },
   "homepage": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
   "license": "MIT",
   "main": "src/presentation/api/bootstrap.ts",
