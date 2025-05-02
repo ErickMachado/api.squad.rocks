@@ -4,12 +4,17 @@
   "description": "Gerencie projetos de software de forma simples e transparente 🤘",
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0"
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7"
   },
   "homepage": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
   "license": "MIT",
   "main": "src/presentation/api/bootstrap.ts",
   "name": "@squadrocks/backend",
   "private": true,
-  "readme": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file"
+  "readme": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
+  "scripts": {
+    "lint:commit": "commitlint --edit $1",
+    "prepare": "husky"
+  }
 }
