@@ -6,8 +6,10 @@
     "@biomejs/biome": "^1.9.4",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
+    "@types/node": "^22.15.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
+    "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   },
   "homepage": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
@@ -17,6 +19,8 @@
   "private": true,
   "readme": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
   "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit",
     "lint:check": "npx @biomejs/biome check .",
     "lint:fix": "npx @biomejs/biome check . --write",
     "lint:commit": "commitlint --edit $1",
