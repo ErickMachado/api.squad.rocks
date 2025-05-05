@@ -7,10 +7,15 @@
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@types/node": "^22.15.3",
+    "dotenv": "^16.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.3"
   },
   "homepage": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
   "license": "MIT",
@@ -26,6 +31,7 @@
     "lint:commit": "commitlint --edit $1",
     "lint:staged": "lint-staged",
     "prepare": "husky",
+    "start:dev": "tsx watch src/main/bootstrap.ts",
     "test": "vitest run --dir tests",
     "test:unit": "vitest run --dir tests/unit",
     "test:integration": "vitest run --dir tests/integration"
