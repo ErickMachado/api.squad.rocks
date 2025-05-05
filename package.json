@@ -15,6 +15,7 @@
     "vitest": "^3.1.2"
   },
   "dependencies": {
+    "winston": "^3.17.0",
     "zod": "^3.24.3"
   },
   "homepage": "https://github.com/ErickMachado/api.squad.rocks?tab=readme-ov-file",
