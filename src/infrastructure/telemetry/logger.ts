@@ -24,4 +24,8 @@ export class Logger {
   public debug(message: string, meta?: LogMetadata): void {
     this.logger.debug(message, meta)
   }
+
+  public error(message: string, meta?: LogMetadata): void {
+    this.logger.error(message, meta)
+  }
 }
